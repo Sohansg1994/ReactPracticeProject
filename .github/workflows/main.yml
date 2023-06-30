@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          working-directory: ./prac-project
+          cache-dependency-path: './prac-project/package-lock.json'
       - name: Install dependencies
         run: npm install
         working-directory: ./prac-project
