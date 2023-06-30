@@ -38,6 +38,8 @@ jobs:
           cache-dependency-path: './prac-project/package-lock.json'
       - name: Install dependencies
         run: npm install
+        working-directory: './prac-project'
+
       - name: Build
         run: npm run build
       - name: Setup Pages
